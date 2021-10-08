@@ -1,0 +1,608 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*Common*/
+.clear{
+    clear: both;
+}
+
+.text-whitle{
+    color: #fff !important;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+    
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+    
+}
+
+#nav > li:hover > a{
+    color: #fff;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0 ,0.3);
+    
+}
+
+#nav .nav-down{
+    font-size: 14px;
+}
+
+#nav .subnav a{
+    color: #333;
+    padding: 0 12px;
+    line-height: 38px;
+    min-width: 160px;
+}
+
+#nav .subnav li:hover a{
+    color: #fff;
+    background-color: #ccc;
+    
+}    
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+
+#header .mobile-menu-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+
+}
+
+
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+
+
+#header .menu-icon,
+#header .search-icon{
+    color: #fff;
+    font-size: 20px ;
+    line-height: 46px;
+
+
+}
+
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/chicago.jpg') top center / cover no-repeat;
+    
+
+}
+
+#slider .text-conntent{
+    position: absolute;
+    bottom: 47px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #fff;
+
+}
+
+#slider .text-heading{
+    font-weight: 400;
+    font-size: 24px;
+
+}
+
+#slider .text-descreption{
+    font-size: 15px;
+    margin-top: 25px;
+
+}
+
+
+#content{
+
+}
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 ;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+
+}
+
+#content .section-heading{
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: 4px;
+
+}
+
+#content .section-sub-heading{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    color: #000;
+
+}
+
+#content .section-sub-heading-tour{
+    color: #fff;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    
+}
+
+
+#content .about-text{
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 15px;
+
+}
+
+#content .members-list{
+    padding: 32px;
+    overflow: hidden;
+    
+
+}
+
+#content .member-item{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+    
+
+}
+
+#content .member-name{
+    padding: 15px 0;
+    font-size: 15px;
+
+}
+
+#content .member-img{
+    width: 66%;
+    border-radius: 4px;
+
+}
+
+.tour-section{
+    background-color: #000;
+}
+
+.tour-section .content-section{
+
+}
+
+.tour-section .section-heading, .section-sub-heading{
+    color: #fff;
+
+}
+
+.tickets-list{
+    background-color: #fff;
+    margin-top: 32px;
+    list-style: none;
+}
+
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+
+}
+
+.tickets-list .sold-out{
+    color: #fff;
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 2px 7px;
+    text-align: center;
+
+}
+
+.quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+
+}
+
+/*Place*/
+.places-list{
+    padding: 32px 8px 48px;
+    overflow: hidden;
+    margin: 0 -16px;
+}
+
+.place-item{
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+
+    
+
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 16px 16px;
+
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.place-time{
+    font-size: 15px;
+    padding-top: 15px;
+    opacity: 0.6;
+
+}
+
+.place-descreption{
+    font-size: 15px;
+    padding: 15px 0;
+    line-height: 1.4;
+
+}
+
+.place-buy-btn{
+    font-size: 15px;
+    padding: 11px 16px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.place-buy-btn:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/*Contact*/
+
+.info-contact{
+    padding: 32px 0;
+    overflow: hidden;
+    
+
+}
+
+.contact-list{
+    float: left;
+    padding:  8px;
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.4;
+ }
+
+.contact-list i{
+     width: 30px;
+     display: inline-block;
+ }
+
+ .cotact-form{
+     font-size: 15px;
+ }
+
+
+.enter-info{
+    margin: 0 -16px;
+    overflow: hidden;
+}
+
+.enter-name{
+    float: left;
+    width: 50%;
+    padding: 8px;
+
+}
+
+.form-name{
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+    
+
+}
+
+.enter-message{
+    width: 100%;
+    float: left;
+    padding:  8px;
+
+}
+
+.form-send{
+    float: right;
+    margin: 8px -8px;
+    padding: 12px 16px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #000;
+}
+
+.form-send:hover{
+    background-color: #ccc;
+    cursor: pointer;
+    color: #000;
+}
+
+.map-section img{
+    width: 100%;
+}
+
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    
+}
+
+#footer .footer-social{
+    font-size: 24px;
+}
+
+#footer .footer-social a{
+    color: rgba(0, 0, 0 ,0.6);
+    text-decoration: none;
+}
+
+#footer .footer-social a:hover,
+#footer .footer-text a:hover{
+    color: rgba(0, 0, 0 ,0.4);
+}
+
+
+#footer .footer-text{
+    margin: 16px;
+    color: rgba(0, 0, 0 ,0.6);
+
+}
+
+#footer .footer-text a{
+    color: rgba(0, 0, 0 ,0.6);
+   
+}
+
+
+/*Giao diện buy ticket*/
+.modal{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0 ,0.4);
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px;
+    color: #fff;
+    
+}
+
+.modal-close:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.modal-header{
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+.modal-header i{
+    margin-right: 16px;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    color: #000;
+    margin: 15px 0;
+
+}
+
+.model-input{
+    padding: 12px ;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+#buy-ticket{
+    padding: 16px 0;
+    width: 100%;
+    color: #fff;
+    background-color: #009688 ;
+    font-size: 15px;
+    border: none;
+    text-transform: uppercase;
+    
+}
+
+#buy-ticket:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+
+#buy-ticket i{
+    font-weight: 600;
+}
+
+.modal-footer{
+    padding:  16px;
+    text-align: right;
+}
+
+.modal-footer a{
+    color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from{
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+    
+}
+
+
+
